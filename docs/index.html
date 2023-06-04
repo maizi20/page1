@@ -1,4 +1,13 @@
-<html><body>
-  <p style='font-color:red'>test</p>
-  <script>console.log('helloworld')</script>
+<html><head>
+<style></style>
+</head><body>
+<script>
+  setTimeout(function(){
+    var d=document,e=null,s='',root=d.createElement('div');
+    d.body.append(root);
+    for(s of'webgl/gl1,webgl/gl2'.split(','))
+      e=d.createElement('a'),e.href=s,e.innerText=s,root.append(e);
+    
+  },100);
+</script>
 </body></html>
